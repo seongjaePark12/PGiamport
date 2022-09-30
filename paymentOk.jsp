@@ -12,7 +12,6 @@
 	
 	<script>
 	// https://www.iamport.kr/
-		/* IMP.init('imp85272380'); // 가맹점 식별코드  */
 		IMP.init('imp21064327'); // 가맹점 식별코드 
 		
 		IMP.request_pay({
