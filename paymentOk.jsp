@@ -12,7 +12,7 @@
 	
 	<script>
 	// https://www.iamport.kr/
-		IMP.init('imp21064327'); // 가맹점 식별코드 
+		IMP.init('imp85272380'); // 가맹점 식별코드 
 		// 장바구니 vo에서 데이터를 빼오는 방법
 		IMP.request_pay({
 		    pg : 'inicis', // version 1.1.0부터 지원.		// 변경된 방침에서는 pg : 'html5_inicis' 로 고쳐준다.
