@@ -46,7 +46,7 @@
 		    }
 		    else {
 					var temp = "";
-					<*temp += '?name=${payMentVo.name}';
+					/*temp += '?name=${payMentVo.name}';
 					temp += '&amount=${payMentVo.amount}';
 					temp += '&buyer_email=${payMentVo.buyer_email}';
 					temp += '&b yer_name=${payMentVo.buyer_name}';
