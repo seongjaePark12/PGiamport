@@ -15,7 +15,8 @@
 		IMP.init('imp85272380'); // 가맹점 식별코드 
 		// 장바구니 vo에서 데이터를 빼오는 방법
 		IMP.request_pay({
-		    pg : 'inicis', // version 1.1.0부터 지원.		// 변경된 방침에서는 pg : 'html5_inicis' 로 고쳐준다.
+		    pg : 'kakaopay', // 카카오 테스트
+/* 		    pg : 'inicis', // version 1.1.0부터 지원.		// 변경된 방침에서는 pg : 'html5_inicis' 로 고쳐준다. */
 		    pay_method : 'card',
 		    merchant_uid : 'merchant_' + new Date().getTime(),
 		    name : '상품1' , //결제창에서 보여질 이름
@@ -45,17 +46,19 @@
 		    }
 		    else {
 					var temp = "";
-					/*temp += '?name=${payMentVo.name}';
-					temp += '&amount=${payMentVo.amount}';
-					temp += '&buyer_email=${payMentVo.buyer_email}';
-					temp += '&b yer_name=${payMentVo.buyer_name}';
-					temp += '&buyer_tel=${payMentVo.buyer_tel}';
-					temp += '&buyer_addr=${payMentVo.buyer_addr}';
-					temp += '&buyer_postcode=${payMentVo.buyer_postcode}';
-					temp += '&imp_uid=' + rsp.imp_uid;
-					temp += '&merchant_uid=' + rsp.merchant_uid;
-					temp += '&paid_amount=' + rsp.paid_amount;
-					temp += '&apply_num=' + rsp.apply_num;*/
+			    
+// 					temp += '?name=${payMentVo.name}';
+// 					temp += '&amount=${payMentVo.amount}';
+// 					temp += '&buyer_email=${payMentVo.buyer_email}';
+// 					temp += '&b yer_name=${payMentVo.buyer_name}';
+// 					temp += '&buyer_tel=${payMentVo.buyer_tel}';
+// 					temp += '&buyer_addr=${payMentVo.buyer_addr}';
+// 					temp += '&buyer_postcode=${payMentVo.buyer_postcode}';
+// 					temp += '&imp_uid=' + rsp.imp_uid;
+// 					temp += '&merchant_uid=' + rsp.merchant_uid;
+// 					temp += '&paid_amount=' + rsp.paid_amount;
+// 					temp += '&apply_num=' + rsp.apply_num;
+			    
 			    		temp += '?name=${name}';
 					temp += '&amount=${amount}';
 					temp += '&buyer_email=${buyer_email}';
